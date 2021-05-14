@@ -98,6 +98,19 @@ $(document).ready(function(){
     ]
   });
 
+  $('.slider_img').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    autoplaySpeed: 6000,
+    arrows: true,
+    slidesToShow: 1,
+    adaptiveHeight: true,
+    autoplay: true,
+    prevArrow: "<button class='prev slick-prev'><img class='left-arrow ' src='./assets/img/left.png' alt=''></button>",
+    nextArrow: "<button class='next slick-next'><img class='right-arrow ' src='./assets/img/right.png' alt=''></button>",
+    
+  });
 
 
 
