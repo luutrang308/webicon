@@ -10,7 +10,7 @@ $(document).ready(function(){
   })
 
   $('.slider_banner').slick({
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 300,
     autoplaySpeed: 6000,
@@ -20,19 +20,46 @@ $(document).ready(function(){
     autoplay: true,
   });
 
-  $('.slider_categories').slick({
+  $('.play_img').click(function() {
+    $('.video_page').addClass('active');
+  });
+
+  $('.slider_about').slick({
     dots: false,
     infinite: true,
     speed: 300,
     autoplaySpeed: 8000,
     slidesToShow: 1,
     adaptiveHeight: true,
-    autoplay: true,    
+    autoplay: false,    
     arrows: true,
     prevArrow: "<button class='prev slick-prev'><img class='left-arrow ' src='./assets/img/left.png' alt=''></button>",
-    nextArrow: "<button class='next slick-next'><img class='right-arrow ' src='./assets/img/right.png' alt=''></button>",
+    nextArrow: "<button class='next slick-next'><img class='right-arrow ' src='./assets/img/right1.png' alt=''></button>",
     
   });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 
 
   $('.slide_for').slick({
